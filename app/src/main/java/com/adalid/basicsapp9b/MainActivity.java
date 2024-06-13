@@ -76,11 +76,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clearFields(View view) {
-        txtNum1.setText("");
-        txtNum2.setText("");
-        txtResult.setText("");
-        Toast.makeText(this, "Los Campos se Limpiaron", Toast.LENGTH_SHORT).show();
-        return;
-
+        if (txtNum1.getText().toString().isEmpty() || txtNum2.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Los Campos estan vacios, no hay nada que limpiar", Toast.LENGTH_SHORT).show();
+            return;
+        } else {
+            txtNum1.setText("");
+            txtNum2.setText("");
+            txtResult.setText("");
+            Toast.makeText(this, "Los Campos se Limpiaron", Toast.LENGTH_SHORT).show();
+            return;
+        }
     }
 }
