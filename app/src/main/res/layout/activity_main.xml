@@ -45,6 +45,7 @@
         android:layout_marginTop="108dp"
         android:backgroundTint="#000000"
         android:ems="10"
+        android:hint="Ingresa el primer valor "
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -57,9 +58,10 @@
         android:id="@+id/txtNum2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="200dp"
         android:backgroundTint="#000000"
         android:ems="10"
+        android:hint="Ingresa el segundo valor"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -81,29 +83,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNum2" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Numero 1"
-        app:layout_constraintBottom_toTopOf="@+id/txtNum1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.249"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="204dp"
-        android:text="Numero 2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
